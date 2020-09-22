@@ -11,10 +11,10 @@ function connect(locals) {
 
     return client.connect()
     .then((connection) => {
-        locals.collectionUsers = connection.db(`VGhub`).collection('v_games')
+        locals.collectionVGhub = connection.db('VGhub').collection('Games')
     })
     .catch(err => {
-        console.log(err.message)
+        console.log(err)
         process.exit()
     })
 

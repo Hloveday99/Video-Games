@@ -5,7 +5,7 @@
  */
 require('dotenv').config()
 const app = require('../app');
-const debug = require('debug')('crudsu:server');
+const debug = require('debug')('crud-setup:server');
 const http = require('http');
 
 /**
