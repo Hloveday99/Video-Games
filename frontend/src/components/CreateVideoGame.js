@@ -21,7 +21,7 @@ class CreateVideoGame extends React.Component {
     this.setState({ consoles: newConsoles });
   };
   removeConsole = (index) => {
-    const newConsoles = this.state.consoles.map((x) => x);
+    const newConsoles = this.state.consoles.map(x => x);
     newConsoles.splice(index, 1);
     this.setState({ consoles: newConsoles });
   };
@@ -81,7 +81,7 @@ class CreateVideoGame extends React.Component {
             <option value="Switch">Switch</option>
           </select>
           <input
-            className="del-console"
+            className="del-btn"
             type="button"
             value="X"
             onClick={() => this.removeConsole(index)}

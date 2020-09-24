@@ -1,5 +1,10 @@
-.App {
+.App, html{
   text-align: center;
+  background-image: url(https://cdn.wallpapersafari.com/80/89/6Axgto.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  color: green;
+
 }
 
 .App-logo {
@@ -52,6 +57,9 @@ button {
   align-self: center;
 }
 
-.del-console {
-  background-color: red
+.del-btn {
+  background-color: red;
+  color: black;
+  width: 25px;
+
 }
