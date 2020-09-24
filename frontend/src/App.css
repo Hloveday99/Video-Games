@@ -42,3 +42,16 @@ form {
   flex-direction: column;
   margin: 0 20vw;
 }
+label {
+  margin-right: 2vw
+}
+button {
+  background-color: blue;
+  color: white;
+  width: 50%;
+  align-self: center;
+}
+
+.del-console {
+  background-color: red
+}

@@ -17,12 +17,12 @@ export default class extends Component {
         this.getVideoGames()
     }
     render() {
-        const displayGames = this.state.videoGames.map(game => <VideoGame game={game}/>)
+        const displayGames = this.state.videoGames.map(game => <VideoGame key={game._id} game={game._id}/>)
 
         return (
             <div id="HelloThere">
                 <h1>Video Games</h1>
-                <CreateVideoGame/>
+                <CreateVideoGame refresh={this.getVideoGames}/>
                 {displayGames}
                 </div>
         )
