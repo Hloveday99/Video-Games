@@ -63,3 +63,10 @@ button {
   width: 25px;
 
 }
+
+.edit {
+  background-color: green;
+  color: white;
+  width: 60px;
+  margin-left: 2vw;
+}

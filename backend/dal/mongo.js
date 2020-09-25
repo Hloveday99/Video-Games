@@ -42,13 +42,12 @@ function readOneById(info) {
 
 function createOne(info) {
 
-    return info.collection.insertOne(info.doc)
-    
+    return info.collection.insertOne(info.doc) 
 }
 
 function replaceOne(info) {
 
-    return info.collection.findOneAndReplace(info.query,info.doc)
+    return info.collection.findOneAndReplace({ _id: ObjectID(info.id) }, info.doc)
 
 }
 
